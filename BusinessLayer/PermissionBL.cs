@@ -15,7 +15,7 @@ namespace BusinessLayer
 
             UserPermission up = new UserPermission()
             {
-                UserFK = username
+                UserFK = username,
                 AllowCreate = create,
                 AllowDelete = delete,
                 AllowEdit = edit,
