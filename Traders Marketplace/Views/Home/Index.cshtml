@@ -1,0 +1,22 @@
+﻿@using States;
+@{
+    ViewBag.Title = "Home Page";
+}
+<script>
+    function myFunction() {
+        var register = '@(ViewBag.Resgister)';
+        var dispatched = '@(ViewBag.Dispatched)';
+        var approved = '@(ViewBag.Approved)';
+        var newOrder = '@(ViewBag.NewOrder)';
+
+        alert(register.toString() + "\n" + dispatched.toString() + "\n" + approved + "\n" + newOrder);
+    }
+</script>
+
+<h2>@ViewBag.Message</h2>
+<p>
+    To learn more about ASP.NET MVC visit <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
+
+    <br />
+    <button onclick="myFunction()">Try States Design Patter.</button>
+</p>
